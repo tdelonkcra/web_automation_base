@@ -1,6 +1,7 @@
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara/rspec'
+require 'chromedriver-helper'
 require 'selenium-webdriver'
 require 'site_prism'
 
@@ -20,8 +21,6 @@ Capybara.automatic_label_click = true
 Capybara.default_driver = :default_headless
 Capybara.enable_aria_label = true
 Capybara.save_path = 'tmp/'
-
-SitePrism.configure { |config| config.use_implicit_waits = true }
 
 Before('@ExampleTag') do
   Capybara.app_host = 'https://perfectmotherfuckingwebsite.com'

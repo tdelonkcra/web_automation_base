@@ -2,7 +2,7 @@
 
 This repository provides a solid foundation for a web automation testing framework. It does so by:
 
-* Pinning the project to a specific Ruby version ([2.5.1](/.ruby-version)).
+* Pinning the project to a specific Ruby version ([2.6.0](/.ruby-version)).
 * Enforcing said pinned Ruby version from within the project's [Gemfile](/Gemfile).
 * Pinning gem versions in the project's [Gemfile](/Gemfile), preventing regressions due to breaking changes being made to dependencies.
 * Including a code linter ([Rubocop](https://rubocop.readthedocs.io/en/latest/)) as a `development` dependency and [disabling some noisy cops by default](/.rubocop.yml).
@@ -12,7 +12,7 @@ This repository provides a solid foundation for a web automation testing framewo
 
 ## Dependencies
 
-* Ruby 2.5.1 with Bundler installed.
+* Ruby 2.6.0 with Bundler installed.
 * Chrome or Chromium.
 
 ## Installation
