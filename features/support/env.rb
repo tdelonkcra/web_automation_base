@@ -22,10 +22,10 @@ Capybara.default_driver = :default_headless
 Capybara.enable_aria_label = true
 Capybara.save_path = 'tmp/'
 
-Before('@ExampleTag') do
-  Capybara.app_host = 'https://perfectmotherfuckingwebsite.com'
+Before('@Search') do
+  Capybara.app_host = 'https://www.google.com'
   Capybara.default_max_wait_time = 5
-  @app = ExampleApp.new
+  @app = Google.new
 end
 
 After do |scenario|

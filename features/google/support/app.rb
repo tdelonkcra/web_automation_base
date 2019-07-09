@@ -1,7 +1,7 @@
-class ExampleApp
+class Google
   def initialize; end
 
-  def example_page
-    @example_page ||= ExamplePage.new
+  def home_page
+    @home_page ||= HomePage.new
   end
 end
