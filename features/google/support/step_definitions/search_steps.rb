@@ -16,5 +16,8 @@ Then("Google's homepage loads") do
 end
 
 Then('Search results for {string} load') do |string|
-  puts string
+  expect(@app.search_results_page).to have_about_results
+  expect(@app.search_results_page).to have_actual_results
+  expect(@app.search_results_page).to have_search_bar
+  expect(@app.search_results_page.search_bar.value).to eq string
 end
