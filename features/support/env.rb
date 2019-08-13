@@ -1,7 +1,7 @@
 require 'capybara'
 require 'capybara/cucumber'
 require 'capybara/rspec'
-require 'chromedriver-helper'
+require 'webdrivers'
 require 'selenium-webdriver'
 require 'site_prism'
 
